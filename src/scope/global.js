@@ -1,27 +1,14 @@
-// Variables
+// 📌 Global Scope
 
-var a; // declarando 
-var b = "b" //declaramos y asignamos
-b = "bb" // reasignamos
-var a = "aa" //redeclaracion
+var fruit = "Apple"; // variable global
 
-
-//Global Scope
-
-var fruit = "Apple"; // global
-
-function bestFruit(){
-    console.log(fruit);
-    
+function bestFruit() {
+  console.log(fruit);
 }
-
 bestFruit();
 
-function countries(){
-    country = 'Colombia';
-    console.log(country);
+function countries() {
+  country = "Colombia"; // ❌ crea una variable global de forma implícita
+  console.log(country);
 }
-
-
-
-
+countries();
